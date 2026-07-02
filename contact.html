@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AR Solutions</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+            padding: 20px 0;
+        }
+        .faq-item h4 {
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .faq-item p {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+
+    <!-- Section 1: Header -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.webp" alt="AR Solutions Logo">
+        </a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="ar-solutions.html">SOLUTIONS</a>
+            <a href="industries.html">INDUSTRIES</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Log In</a>
+            <a href="signup.html" class="btn btn-glow">Get Started</a>
+        </div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">HOME</a>
+        <a href="ar-solutions.html">SOLUTIONS</a>
+        <a href="industries.html">INDUSTRIES</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-glow">Get Started</a>
+    </div>
+
+    <!-- Section 2: Hero -->
+    <section class="hero" style="min-height: 40vh; padding-top: 150px; padding-bottom: 0;">
+        <div class="hero-content">
+            <h1 data-aos="zoom-in">
+                Initiate <span class="text-gradient">Contact</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Connect with our spatial computing experts to discuss your enterprise transformation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 3: Contact Form & Info -->
+    <section class="section-pad">
+        <div class="feature-split" style="align-items: flex-start;">
+            
+            <div data-aos="fade-right">
+                <h2 style="font-size: 36px; margin-bottom: 30px;">Global <span class="text-gradient">Headquarters</span></h2>
+                
+                <div class="glass-card" style="padding: 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-location-dot" style="margin: 0; font-size: 30px;"></i>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Silicon Valley Office</h4>
+                        <p style="margin: 0; font-size: 14px;">101 Digital Reality Way, CA 94025</p>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="padding: 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-envelope" style="margin: 0; font-size: 30px;"></i>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Email Us</h4>
+                        <p style="margin: 0; font-size: 14px;">hello@arsolutions.com</p>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="padding: 20px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-phone" style="margin: 0; font-size: 30px;"></i>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Call Us</h4>
+                        <p style="margin: 0; font-size: 14px;">+1 (800) 555-0199</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card" data-aos="fade-left">
+                <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                <form action="404.html">
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 5px; color: var(--text-muted); font-size: 14px;">Full Name</label>
+                        <input type="text" class="form-control" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 5px; color: var(--text-muted); font-size: 14px;">Work Email</label>
+                        <input type="email" class="form-control" required placeholder="jane@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 5px; color: var(--text-muted); font-size: 14px;">Message</label>
+                        <textarea class="form-control" rows="4" required placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-glow" style="width: 100%; margin-top: 10px;">Submit Inquiry</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 4: FAQ -->
+    <section class="section-pad" style="background: rgba(0,240,255,0.02); border-top: 1px solid var(--glass-border);">
+        <h2 class="section-title" data-aos="fade-up">Frequently Asked <span class="text-gradient">Questions</span></h2>
+        <div style="max-width: 800px; margin: 0 auto;" data-aos="fade-up">
+            <div class="faq-item">
+                <h4>Do you provide the AR hardware?</h4>
+                <p>We are a software platform provider. However, we have strategic partnerships with Microsoft, Apple, and Meta, and can facilitate bulk hardware procurement for enterprise deployments.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is my CAD data secure on your cloud?</h4>
+                <p>Absolutely. We use end-to-end AES-256 encryption. For highly sensitive defense or medical applications, we offer fully air-gapped on-premise server deployments.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How long does a typical deployment take?</h4>
+                <p>Initial software provisioning takes less than 24 hours. Custom integrations with your existing ERP or PLM systems typically take 2-6 weeks depending on complexity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Global Map Placeholder -->
+    <section class="section-pad" style="text-align: center;">
+        <h2 class="section-title" data-aos="fade-up">Global <span class="text-gradient">Presence</span></h2>
+        <div class="glass-card" style="height: 400px; max-width: 1000px; margin: 0 auto; display: flex; align-items: center; justify-content: center; position: relative;" data-aos="zoom-in">
+            <!-- Simulated Map Background -->
+            <div style="position: absolute; inset: 0; background: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg') center/cover no-repeat; opacity: 0.1; filter: invert(1) hue-rotate(180deg);"></div>
+            <div style="position: relative; z-index: 10;">
+                <i class="fa-solid fa-earth-americas" style="font-size: 60px; color: var(--primary); margin-bottom: 20px;"></i>
+                <h3>Operating in 24 Countries</h3>
+                <p style="color: var(--text-muted);">Serving Fortune 500 clients globally with 99.99% uptime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Global Support Team -->
+    <section class="section-pad">
+        <h2 class="section-title" data-aos="fade-up">Dedicated <span class="text-gradient">Experts</span></h2>
+        <div class="bento-grid">
+            <div class="glass-card col-4" data-aos="fade-up" style="text-align: center;">
+                <div style="width: 100px; height: 100px; background: url('assets/Portrait_Placeholder.webp') center/cover; border-radius: 50%; margin: 0 auto 20px; filter: invert(1);"></div>
+                <h3 style="margin-bottom: 5px;">Elena Rodriguez</h3>
+                <p style="color: var(--primary); font-size: 14px; margin-bottom: 15px;">Head of Enterprise Integrations</p>
+                <p style="color: var(--text-muted); font-size: 14px;">Specializes in secure on-premise deployments for defense and medical sectors.</p>
+            </div>
+            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                <div style="width: 100px; height: 100px; background: url('assets/Portrait_Placeholder.webp') center/cover; border-radius: 50%; margin: 0 auto 20px; filter: invert(1);"></div>
+                <h3 style="margin-bottom: 5px;">James Chen</h3>
+                <p style="color: var(--secondary); font-size: 14px; margin-bottom: 15px;">Lead AR Solutions Architect</p>
+                <p style="color: var(--text-muted); font-size: 14px;">Expert in converting massive CAD assemblies into real-time rendered holograms.</p>
+            </div>
+            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                <div style="width: 100px; height: 100px; background: url('assets/Portrait_Placeholder.webp') center/cover; border-radius: 50%; margin: 0 auto 20px; filter: invert(1);"></div>
+                <h3 style="margin-bottom: 5px;">Dr. Amina Fall</h3>
+                <p style="color: var(--accent); font-size: 14px; margin-bottom: 15px;">Hardware Partnerships Lead</p>
+                <p style="color: var(--text-muted); font-size: 14px;">Ensures optimal software performance across Vision Pro, HoloLens, and Quest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Partner Network -->
+    <section class="section-pad" style="background: rgba(0,240,255,0.02); border-top: 1px solid var(--glass-border);">
+        <div class="glass-card" style="max-width: 900px; margin: 0 auto; text-align: center; border: 1px solid var(--secondary);" data-aos="zoom-in">
+            <h2 style="font-size: 36px; margin-bottom: 20px;">Become an <span class="text-gradient">Integration Partner</span></h2>
+            <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 30px;">
+                Are you an IT consultancy or software vendor? Join our certified partner network to build custom spatial computing solutions for your clients using our powerful backend engine.
+            </p>
+            <a href="404.html" class="btn btn-glow">Apply for Partnership</a>
+        </div>
+    </section>
+
+    <!-- Section 8: Social Community -->
+    <section class="section-pad">
+        <h2 class="section-title" data-aos="fade-up">Join the <span class="text-gradient">Community</span></h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;" data-aos="fade-up">
+            <a href="404.html" class="glass-card" style="width: 200px; text-align: center; text-decoration: none; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <i class="fa-brands fa-linkedin" style="font-size: 50px; color: #0077b5; margin-bottom: 15px;"></i>
+                <h4 style="color: #fff; margin: 0;">LinkedIn</h4>
+                <p style="color: var(--text-muted); font-size: 12px; margin-top: 5px;">50k+ Followers</p>
+            </a>
+            <a href="404.html" class="glass-card" style="width: 200px; text-align: center; text-decoration: none; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <i class="fa-brands fa-x-twitter" style="font-size: 50px; color: #fff; margin-bottom: 15px;"></i>
+                <h4 style="color: #fff; margin: 0;">Twitter / X</h4>
+                <p style="color: var(--text-muted); font-size: 12px; margin-top: 5px;">Latest Updates</p>
+            </a>
+            <a href="404.html" class="glass-card" style="width: 200px; text-align: center; text-decoration: none; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                <i class="fa-brands fa-youtube" style="font-size: 50px; color: #ff0000; margin-bottom: 15px;"></i>
+                <h4 style="color: #fff; margin: 0;">YouTube</h4>
+                <p style="color: var(--text-muted); font-size: 12px; margin-top: 5px;">Video Demos</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 9: Footer -->
+    <footer style="background-color: #050810; padding: 60px 20px 20px; font-family: 'Poppins', sans-serif; border-top: 1px solid var(--glass-border);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 30px; margin-bottom: 20px;">
+                <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                    Advancing human interaction through the power of spatial computing, artificial intelligence and augmented reality.
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 10px;">
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-github"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Platform</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Cloud Rendering</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Spatial Analytics</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">AI Assistance</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Hardware SDK</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Enterprise API</a></li>
+                </ul>
+            </div>
+
+           <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Company</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Home</a></li>
+                    <li><a href="ar-solutions.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Solutions</a></li>
+                    <li><a href="blog.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Blog</a></li>
+                    <li><a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Contact</a></li>
+                    <li><a href="industries.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Industries</a></li>
+                </ul>
+            </div>
+
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Resources</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Careers</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">About Us</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Client Portal</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Developer Portal</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+            <p style="color: var(--text-muted); font-size: 12px; margin: 0;">&copy; 2026 Stackly, Inc. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Privacy Policy</a>
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Terms of Service</a>
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

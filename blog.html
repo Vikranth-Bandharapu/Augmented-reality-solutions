@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | AR Solutions</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.webp" alt="AR Solutions Logo">
+        </a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="ar-solutions.html">SOLUTIONS</a>
+            <a href="industries.html">INDUSTRIES</a>
+            <a href="blog.html" class="active">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Log In</a>
+            <a href="signup.html" class="btn btn-glow">Get Started</a>
+        </div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">HOME</a>
+        <a href="ar-solutions.html">SOLUTIONS</a>
+        <a href="industries.html">INDUSTRIES</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-glow">Get Started</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 40vh; padding-top: 150px; padding-bottom: 0;">
+        <div class="hero-content">
+            <h1 data-aos="zoom-in">
+                Latest <span class="text-gradient">Insights</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                News, updates, and deep dives into the world of spatial computing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-pad">
+        <div class="bento-grid">
+            
+            <div class="glass-card col-4" data-aos="fade-up">
+                <img src="assets/ar_city_.webp" alt="AR City" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+                <p style="color: var(--primary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Architecture</p>
+                <h3 style="margin-bottom: 15px;">Visualizing Smart Cities in Real-Time</h3>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">How urban planners are using AR to overlay utility infrastructure and zoning data onto empty lots.</p>
+                <a href="404.html" style="color: #fff; text-decoration: none; border-bottom: 1px solid var(--primary); padding-bottom: 3px;">Read Article <i class="fa-solid fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+            </div>
+
+            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/ar_engineer_.webp" alt="AR Engineer" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+                <p style="color: var(--secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Enterprise</p>
+                <h3 style="margin-bottom: 15px;">The ROI of Remote Assistance</h3>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">A detailed breakdown of how tier-1 manufacturing firms are saving millions annually by reducing expert travel.</p>
+                <a href="404.html" style="color: #fff; text-decoration: none; border-bottom: 1px solid var(--secondary); padding-bottom: 3px;">Read Article <i class="fa-solid fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+            </div>
+
+            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/ar_engine_.webp" alt="AR Engine" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+                <p style="color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Engineering</p>
+                <h3 style="margin-bottom: 15px;">Digital Twins: The Next Industrial Revolution</h3>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Connecting live IoT telemetry data to holographic 3D models for predictive maintenance.</p>
+                <a href="404.html" style="color: #fff; text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 3px;">Read Article <i class="fa-solid fa-arrow-right" style="font-size: 12px; margin-left: 5px;"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section-pad" style="background: rgba(0,240,255,0.02); border-top: 1px solid var(--glass-border);">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;" data-aos="zoom-in">
+            <h2 style="font-size: 36px; margin-bottom: 20px;">Subscribe to our <span class="text-gradient">Newsletter</span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">Get the latest AR industry news and product updates delivered straight to your inbox.</p>
+            <form action="404.html" style="display: flex; gap: 10px;">
+                <input type="email" required placeholder="Enter your email" style="flex: 1; padding: 15px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.5); color: #fff; outline: none;">
+                <button type="submit" class="btn btn-glow" style="border: none;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 5: Trending Article Spotlight -->
+    <section class="section-pad">
+        <h2 class="section-title" data-aos="fade-up">Trending <span class="text-gradient">Now</span></h2>
+        <div class="feature-split" style="background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; padding: 0;" data-aos="zoom-in">
+            <div style="flex: 1; min-height: 400px; background: url('assets/images/ar_engine.png') center/cover; position: relative;">
+                <div style="position: absolute; top: 20px; left: 20px; background: var(--primary); color: #000; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 12px;">EDITOR'S PICK</div>
+            </div>
+            <div style="flex: 1; padding: 40px;">
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Published 2 days ago &bull; 8 min read</p>
+                <h2 style="font-size: 32px; margin-bottom: 20px;">The Convergence of Spatial Computing and AI</h2>
+                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 30px;">
+                    How large language models are being integrated directly into augmented reality headsets to provide real-time, context-aware assistance to field technicians.
+                </p>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 30px;">
+                    <div style="width: 40px; height: 40px; background: #333; border-radius: 50%;"></div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 14px;">Michael Torres</h4>
+                        <p style="margin: 0; font-size: 12px; color: var(--text-muted);">Senior Tech Analyst</p>
+                    </div>
+                </div>
+                <a href="404.html" class="btn btn-glow">Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Topic Cloud / Categories -->
+    <section class="section-pad" style="background: rgba(0,240,255,0.02); border-top: 1px solid var(--glass-border);">
+        <h2 class="section-title" data-aos="fade-up">Explore by <span class="text-gradient">Topic</span></h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; max-width: 800px; margin: 0 auto;" data-aos="fade-up">
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--primary); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Healthcare</a>
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--secondary); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--secondary)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Engineering</a>
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--accent); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Retail</a>
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--primary); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Hardware Reviews</a>
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--secondary); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--secondary)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Case Studies</a>
+            <a href="404.html" style="padding: 10px 20px; border: 1px solid var(--accent); border-radius: 30px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';">Developer SDKs</a>
+        </div>
+    </section>
+
+    <!-- Section 7: The AR Podcast -->
+    <section class="section-pad">
+        <h2 class="section-title" data-aos="fade-up">The AR <span class="text-gradient">Podcast</span></h2>
+        <div class="glass-card" style="max-width: 800px; margin: 0 auto; display: flex; align-items: center; gap: 30px; padding: 30px;" data-aos="zoom-in">
+            <div style="width: 150px; height: 150px; background: linear-gradient(45deg, var(--primary), var(--secondary)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                <i class="fa-solid fa-microphone-lines" style="font-size: 60px; color: #000;"></i>
+            </div>
+            <div style="flex: 1;">
+                <p style="color: var(--primary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">Episode 42</p>
+                <h3 style="margin-bottom: 10px;">Building the Metaverse for Enterprise</h3>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Listen to our latest 45-minute deep dive with the CTO of AcmeCorp on how they scaled their AR deployment to 10,000 workers.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <a href="404.html" style="width: 40px; height: 40px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; color: #000; text-decoration: none;"><i class="fa-solid fa-play"></i></a>
+                    <div style="flex: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; position: relative;">
+                        <div style="position: absolute; top: 0; left: 0; height: 100%; width: 30%; background: var(--primary); border-radius: 2px;"></div>
+                        <div style="position: absolute; top: -4px; left: 30%; width: 12px; height: 12px; background: #fff; border-radius: 50%;"></div>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted);">15:42 / 45:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Footer -->
+    <footer style="background-color: #050810; padding: 60px 20px 20px; font-family: 'Poppins', sans-serif; border-top: 1px solid var(--glass-border);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 30px; margin-bottom: 20px;">
+                <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                    Advancing human interaction through the power of spatial computing, artificial intelligence and augmented reality.
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 10px;">
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-github"></i></a>
+                    <a href="404.html" style="width: 35px; height: 35px; border-radius: 50%; background: #1a1f2e; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='var(--primary)'; this.style.color='#000';" onmouseout="this.style.background='#1a1f2e'; this.style.color='var(--text-muted)';"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Platform</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Cloud Rendering</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Spatial Analytics</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">AI Assistance</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Hardware SDK</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Enterprise API</a></li>
+                </ul>
+            </div>
+
+          <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Company</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Home</a></li>
+                    <li><a href="ar-solutions.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Solutions</a></li>
+                    <li><a href="blog.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Blog</a></li>
+                    <li><a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Contact</a></li>
+                    <li><a href="industries.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Industries</a></li>
+                </ul>
+            </div>
+
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 16px;">Resources</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Careers</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">About Us</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Client Portal</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Developer Portal</a></li>
+                    <li><a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+            <p style="color: var(--text-muted); font-size: 12px; margin: 0;">&copy; 2026 Stackly, Inc. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Privacy Policy</a>
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Terms of Service</a>
+                <a href="404.html" style="color: var(--text-muted); text-decoration: none; font-size: 12px; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
