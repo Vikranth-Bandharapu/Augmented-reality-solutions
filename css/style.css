@@ -155,6 +155,7 @@ nav a:hover::after, nav a.active::after {
     transition: 0.3s;
     cursor: pointer;
     border: none;
+    display: inline-block;
 }
 
 .btn-outline {
@@ -304,7 +305,7 @@ nav a:hover::after, nav a.active::after {
     opacity: 1;
 }
 
-.glass-card i {
+.glass-card > i {
     font-size: 40px;
     color: var(--primary);
     margin-bottom: 20px;
