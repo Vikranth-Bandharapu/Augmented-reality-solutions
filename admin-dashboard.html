@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body { margin: 0; padding: 0; overflow-x: hidden; display: flex; height: 100vh; background-color: var(--bg-dark); color: var(--text-main); }
-        .sidebar { width: 260px; background: rgba(10, 15, 25, 0.95); border-right: 1px solid var(--glass-border); backdrop-filter: blur(20px); display: flex; flex-direction: column; position: fixed; height: 100vh; left: 0; top: 0; z-index: 100; }
+        body { margin: 0; padding: 0; overflow-x: hidden; display: flex; height: 100vh; background-color: var(--bg-light); color: var(--text-main); }
+        .sidebar { width: 260px; background: rgba(255, 255, 255, 0.95); border-right: 1px solid var(--glass-border); backdrop-filter: blur(20px); display: flex; flex-direction: column; position: fixed; height: 100vh; left: 0; top: 0; z-index: 100; }
         .sidebar-header { padding: 30px 20px; border-bottom: 1px solid var(--glass-border); }
         .sidebar-menu { flex: 1; padding: 20px 0; display: flex; flex-direction: column; gap: 5px; overflow-y: auto; }
         .sidebar-link { padding: 15px 25px; color: var(--text-muted); text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 15px; transition: 0.3s; cursor: pointer; border-right: 3px solid transparent; }
-        .sidebar-link:hover, .sidebar-link.active { background: rgba(0, 240, 255, 0.05); color: var(--primary); border-right: 3px solid var(--primary); }
+        .sidebar-link:hover, .sidebar-link.active { background: rgba(0, 122, 255, 0.05); color: var(--primary); border-right: 3px solid var(--primary); }
         .sidebar-footer { padding: 20px; border-top: 1px solid var(--glass-border); }
         .main-content { margin-left: 260px; width: calc(100% - 260px); padding: 40px; overflow-y: auto; position: relative; z-index: 10; }
         .tab-content { display: none; animation: fadeIn 0.3s ease-in-out; }
         .tab-content.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .stat-card { background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; margin-bottom: 20px; }
+        .stat-card { background: rgba(255,255,255,0.5); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; margin-bottom: 20px; }
         .data-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         .data-table th, .data-table td { padding: 15px; text-align: left; border-bottom: 1px solid var(--glass-border); font-size: 14px; }
         .data-table th { color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 12px; }
@@ -27,12 +27,12 @@
         .status-active { background: rgba(0, 255, 0, 0.1); color: #0f0; border: 1px solid rgba(0, 255, 0, 0.3); }
         .status-warning { background: rgba(255, 165, 0, 0.1); color: orange; border: 1px solid rgba(255, 165, 0, 0.3); }
         .status-error { background: rgba(255, 51, 51, 0.1); color: #ff3333; border: 1px solid rgba(255, 51, 51, 0.3); }
-        .progress-track { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; margin-top: 10px; }
+        .progress-track { width: 100%; height: 8px; background: rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden; margin-top: 10px; }
         .progress-fill { height: 100%; background: var(--primary); border-radius: 4px; }
         .setting-row { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--glass-border); }
         .switch { position: relative; display: inline-block; width: 50px; height: 24px; }
         .switch input { opacity: 0; width: 0; height: 0; }
-        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255,255,255,0.1); transition: .4s; border-radius: 34px; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.1); transition: .4s; border-radius: 34px; }
         .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; transition: .4s; border-radius: 50%; }
         input:checked + .slider { background-color: var(--primary); }
         input:checked + .slider:before { transform: translateX(26px); }
@@ -43,7 +43,7 @@
         .col-8 { flex: 0 0 calc(66.666% - 10px); }
         .col-12 { flex: 0 0 100%; }
         @media (max-width: 1024px) { .col-3 { flex: 0 0 calc(50% - 10px); } }
-        .hamburger-dashboard { display: none; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 10px; border-radius: 8px; cursor: pointer; color: var(--text-main); align-items: center; justify-content: center; width: 40px; height: 40px; }
+        .hamburger-dashboard { display: none; background: rgba(0,0,0,0.05); border: 1px solid var(--glass-border); padding: 10px; border-radius: 8px; cursor: pointer; color: var(--text-main); align-items: center; justify-content: center; width: 40px; height: 40px; }
         @media (max-width: 768px) {
             .col-3, .col-4, .col-6, .col-8 { flex: 0 0 100%; }
             .sidebar { transform: translateX(-100%); transition: transform 0.3s ease; width: 260px; }
@@ -69,8 +69,9 @@
     <div class="ambient-bg"></div>
     <div class="sidebar">
         <div class="sidebar-header">
-            <img src="https://hariniselvan-bot.github.io/biotech/logo.webp" alt="AR Solutions Logo" style="height: 30px;">
+            <img src="assets/logo.webp" alt="Stackly Logo" style="height: 30px; filter: brightness(0.1);">
             <p style="color: var(--text-muted); font-size: 12px; margin-top: 10px;">System Administrator</p>
+            <p id="displayEmail" style="color: var(--primary); font-size: 11px; margin-top: 5px; word-break: break-all; font-weight: 500;"></p>
         </div>
         <div class="sidebar-menu">
             <a class="sidebar-link active" onclick="switchTab('overview', this)"><i class="fa-solid fa-chart-pie"></i> System Overview</a>
@@ -128,7 +129,7 @@
             <div class="bento-grid">
                 <div class="stat-card col-8">
                     <h3 style="margin-bottom: 20px;">Platform Usage Over Time</h3>
-                    <div style="height: 300px; display: flex; align-items: flex-end; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                    <div style="height: 300px; display: flex; align-items: flex-end; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                         <!-- Fake bar chart -->
                         <div style="flex: 1; background: var(--primary); height: 30%; border-radius: 4px 4px 0 0; opacity: 0.7;"></div>
                         <div style="flex: 1; background: var(--primary); height: 45%; border-radius: 4px 4px 0 0; opacity: 0.8;"></div>

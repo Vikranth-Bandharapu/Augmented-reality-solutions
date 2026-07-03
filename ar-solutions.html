@@ -42,66 +42,67 @@
     </div>
 
     <!-- Section 2: Hero -->
-    <section class="hero" style="min-height: 60vh; padding-top: 150px;">
-        <div class="hero-content">
-            <h1 data-aos="zoom-in">
+    <section class="hero" style="min-height: 70vh; padding: 150px 5% 50px; background: url('assets/spatial_headset.webp') right center/cover no-repeat;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.2) 100%);"></div>
+        <div class="hero-content" style="position: relative; z-index: 10; text-align: left; max-width: 1200px; margin: 0 auto; width: 100%;">
+            <h1 data-aos="zoom-in" style="font-size: clamp(40px, 5vw, 70px); text-transform: none; color: var(--text-main);">
                 Enterprise <span class="text-gradient">AR Solutions</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
+            <p data-aos="fade-up" data-aos-delay="200" style="margin-left: 0; color: var(--text-muted); font-size: 20px;">
                 End-to-end spatial computing applications tailored for operational excellence.
             </p>
         </div>
     </section>
 
     <!-- Section 3: Detailed Solutions Grid -->
-    <section class="section-pad" style="padding-top: 0;">
+    <section class="section-pad">
         <div class="bento-grid">
-            <div class="glass-card col-6" data-aos="fade-right">
-                <i class="fa-solid fa-users-viewfinder"></i>
-                <h3>Remote Assistance & Collaboration</h3>
-                <p>Equip your frontline workers with AR headsets or mobile devices to instantly stream their perspective to remote experts. Draw spatial annotations directly onto their physical environment to guide them through complex repairs, reducing downtime and travel costs.</p>
+            <div class="glass-card col-12" data-aos="fade-up" style="padding: 0; display: flex; flex-wrap: wrap; overflow: visible;">
+                <div style="flex: 1; padding: 50px; min-width: 300px; z-index: 2;">
+                    <h3 style="font-size: 32px; margin-bottom: 20px;">Remote Assistance & Collaboration</h3>
+                    <p style="font-size: 18px; color: var(--text-muted);">Equip your frontline workers with AR headsets or mobile devices to instantly stream their perspective to remote experts. Draw spatial annotations directly onto their physical environment to guide them through complex repairs, reducing downtime and travel costs.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <img src="assets/ar_engineer.webp" style="width: calc(100% + 40px); height: calc(100% + 40px); object-fit: cover; border-radius: 24px; position: absolute; top: -20px; right: -20px; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+                </div>
             </div>
-            <div class="glass-card col-6" data-aos="fade-left" data-aos-delay="100">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <h3>Immersive Training</h3>
-                <p>Replace outdated manuals with interactive 3D holographic overlays. Trainees can practice critical procedures in a safe, risk-free environment, building muscle memory faster and improving knowledge retention by over 70%.</p>
+            
+            <div class="glass-card col-6" data-aos="fade-right" data-aos-delay="100" style="padding: 0; display: flex; flex-direction: column;">
+                <img src="assets/holo_medical.webp" style="width: 100%; height: 250px; object-fit: cover; border-radius: 24px 24px 0 0;">
+                <div style="padding: 40px;">
+                    <h3>Immersive Training</h3>
+                    <p style="color: var(--text-muted);">Replace outdated manuals with interactive 3D holographic overlays. Trainees can practice critical procedures in a safe, risk-free environment.</p>
+                </div>
             </div>
-            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="200">
-                <i class="fa-solid fa-cube"></i>
-                <h3>3D Prototyping</h3>
-                <p>Review life-size CAD models in your physical space before manufacturing begins.</p>
-            </div>
-            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="300">
-                <i class="fa-solid fa-vr-cardboard"></i>
-                <h3>Cross-Platform Sync</h3>
-                <p>Seamlessly share AR sessions across HoloLens, Magic Leap, iOS, and Android.</p>
-            </div>
-            <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="400">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>IoT Connectivity</h3>
-                <p>Overlay live sensor data directly onto physical machinery in real-time.</p>
+            
+            <div class="glass-card col-6" data-aos="fade-left" data-aos-delay="200" style="padding: 0; display: flex; flex-direction: column;">
+                <img src="assets/holo_architecture.webp" style="width: 100%; height: 250px; object-fit: cover; border-radius: 24px 24px 0 0;">
+                <div style="padding: 40px;">
+                    <h3>3D Prototyping</h3>
+                    <p style="color: var(--text-muted);">Review life-size CAD models in your physical space before manufacturing begins, saving time and millions in tooling costs.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section 4: Split Feature -->
-    <section class="section-pad">
+    <section class="section-pad" style="background: rgba(0, 122, 255, 0.02); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
         <div class="feature-split">
-            <div class="feature-img-wrapper" data-aos="zoom-in" style="height: 400px;">
-                <img src="assets/ar_city_.webp" alt="AR City Simulation">
+            <div class="feature-img-wrapper" data-aos="zoom-in" style="height: 500px; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
+                <img src="assets/ar_city.webp" alt="AR City Simulation">
             </div>
             <div data-aos="fade-left" style="padding-left: 20px;">
-                <h2 style="font-size: 36px; margin-bottom: 20px;">Urban & Architectural <br><span class="text-gradient">Visualization</span></h2>
-                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 20px;">
-                    Project massive architectural structures into the real world. Allow stakeholders to walk through unbuilt environments, experiencing scale, lighting, and textures interactively.
+                <h2 data-aos="fade-up" style="font-size: 36px; margin-bottom: 20px; color: var(--text-main);">Urban & Architectural <br><span class="text-gradient">Visualization</span></h2>
+                <p data-aos="fade-up" data-aos-delay="100" style="color: var(--text-muted); font-size: 18px; margin-bottom: 30px;">
+                    Project massive architectural structures into the real world. Allow stakeholders to walk through unbuilt environments, experiencing scale, lighting, and textures interactively before a single brick is laid.
                 </p>
-                <a href="404.html" class="btn btn-glow" style="display: inline-block;">Request a Demo</a>
+                <a href="404.html" data-aos="zoom-in" data-aos-delay="200" class="btn btn-glow" style="display: inline-block;">Request a Demo</a>
             </div>
         </div>
     </section>
 
     <!-- Section 5: Step-by-Step Workflow -->
-    <section class="section-pad" style="background: rgba(0,240,255,0.02); border-top: 1px solid var(--glass-border);">
+    <section class="section-pad">
         <h2 class="section-title" data-aos="fade-up">Integration <span class="text-gradient">Workflow</span></h2>
         <div class="bento-grid">
             <div class="glass-card col-4" data-aos="fade-up" data-aos-delay="0">
@@ -132,17 +133,17 @@
                     <th style="padding: 15px; color: var(--primary);">Standard Tier</th>
                     <th style="padding: 15px; color: var(--primary);">Enterprise Tier</th>
                 </tr>
-                <tr style="border-bottom: 1px solid var(--glass-border);">
+                <tr data-aos="fade-left" data-aos-delay="100" style="border-bottom: 1px solid var(--glass-border);">
                     <td style="padding: 15px; color: var(--text-muted);">Max Polygon Count</td>
                     <td style="padding: 15px;">5 Million</td>
                     <td style="padding: 15px;">Unlimited (Cloud Render)</td>
                 </tr>
-                <tr style="border-bottom: 1px solid var(--glass-border);">
+                <tr data-aos="fade-left" data-aos-delay="200" style="border-bottom: 1px solid var(--glass-border);">
                     <td style="padding: 15px; color: var(--text-muted);">Rendering Latency</td>
                     <td style="padding: 15px;">< 20ms</td>
                     <td style="padding: 15px;">< 5ms (Edge Servers)</td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-left" data-aos-delay="300">
                     <td style="padding: 15px; color: var(--text-muted);">Supported Formats</td>
                     <td style="padding: 15px;">OBJ, FBX</td>
                     <td style="padding: 15px;">OBJ, FBX, GLTF, STEP, IGES</td>
